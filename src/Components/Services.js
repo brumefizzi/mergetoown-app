@@ -3,7 +3,10 @@ import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ServicesCard } from "./ServicesCard";
 import projImg1 from "../assets/img/project-img1.png";
 import projImg2 from "../assets/img/project-img2.png";
-import projImg3 from "../assets/img/project-img3.png";
+import projImg5 from "../assets/img/project-img5.png";
+import projImg6 from "../assets/img/project-img6.png";
+import projImg7 from "../assets/img/project-img7.png";
+import projImg8 from "../assets/img/project-img8.png";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
@@ -14,32 +17,32 @@ export const Services = () => {
     {
       title: "Co-ownership Matching",
       description: "Connecting Individuals",
-      imgUrl: projImg1,
+      imgUrl: projImg2,
     },
     {
       title: "Expert Support",
       description: "Guided Ownership",
-      imgUrl: projImg2,
+      imgUrl: projImg1,
     },
     {
       title: "Financial Literacy",
       description: "Wealth Education",
-      imgUrl: projImg1,
+      imgUrl: projImg6,
     },
     {
       title: "Property Assessments",
       description: "Informed Decisions",
-      imgUrl: projImg1,
+      imgUrl: projImg8,
     },
     {
       title: "Enhanced Vetting",
       description: "Trust Assurance",
-      imgUrl: projImg2,
+      imgUrl: projImg7,
     },
     {
       title: "Data Analytics",
       description: "Smart Investments",
-      imgUrl: projImg1,
+      imgUrl: projImg5,
     },
   ];
 
@@ -59,10 +62,10 @@ export const Services = () => {
                       <Nav.Link eventKey="first">What We Provide</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="second">How it Works</Nav.Link>
+                      <Nav.Link eventKey="second">How It Works</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
-                      <Nav.Link eventKey="third">Special Offers</Nav.Link>
+                      <Nav.Link eventKey="third">Our Unique Value</Nav.Link>
                     </Nav.Item>
                   </Nav>
                   <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
@@ -80,11 +83,11 @@ export const Services = () => {
                         }
                       </Row>
                     </Tab.Pane>
-                    <Tab.Pane eventKey="section">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                    <Tab.Pane eventKey="second">
+                      <p>The platform employs a rigorous vetting process, matching subscribers based on their interests, options, and risk appetite, and integrates with payment processors for efficient financial management. Key features include a community space for investors, options for minimum and maximum group size, and advisory services from industry practitioners, among others.</p>
                     </Tab.Pane>
                     <Tab.Pane eventKey="third">
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque quam, quod neque provident velit, rem explicabo excepturi id illo molestiae blanditiis, eligendi dicta officiis asperiores delectus quasi inventore debitis quo.</p>
+                      <p>Through an AI-driven matching system, it aligns individuals based on shared interests, financial goals, and risk tolerance. Additional unique features encompass financial literacy training from industry professionals and sophisticated property assessment tools. It also has a solid contingency plan to handle situations when a co-owner discontinues payment, ensuring stability and security for all parties. This pioneering platform truly redefines home buying for the modern age.</p>
                     </Tab.Pane>
                   </Tab.Content>
                 </Tab.Container>

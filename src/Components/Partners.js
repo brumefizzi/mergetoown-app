@@ -1,11 +1,9 @@
 import React from 'react';
-import meter1 from "../assets/img/meter1.svg";
-import meter2 from "../assets/img/meter1.svg";
-import meter3 from "../assets/img/meter1.svg";
+import meter1 from "../assets/img/meter1.png";
+import meter2 from "../assets/img/meter1.png";
+import meter3 from "../assets/img/meter1.png";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
 import colorSharp from "../assets/img/color-sharp.png"
 
 export const Partners = () => {
@@ -47,7 +45,7 @@ export const Partners = () => {
                                 <h5>Agencies</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Financial Literacy" />
+                                <img src={meter3} alt="Financial Literacy" />
                                 <h5>Financial Institutions</h5>
                             </div>
                             <div className="item">

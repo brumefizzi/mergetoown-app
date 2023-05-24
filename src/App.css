@@ -83,7 +83,7 @@ p.danger {
 }
 /************ Navbar Css ************/
 nav.navbar {
-  padding: 18px 0;
+  padding: 9px 0;
   position: fixed;
   width: 100%;
   top: 0;
@@ -95,7 +95,7 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 nav.navbar a.navbar-brand {
-    width: 9%;
+    width: 100px;
 }
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -143,20 +143,23 @@ span.navbar-text {
     transform: scale(1);
 }
 .social-icon a img {
-	width: 40%;
-	z-index: 1;
-	transition: 0.3s ease-in-out;
+  width: 40%;
+  z-index: 1;
+  transition: 0.3s ease-in-out;
+  filter: brightness(0) saturate(100%) invert(1);
 }
+
 .social-icon a:hover img {
-	filter: brightness(0) saturate(100%) invert(0%) sepia(7%) saturate(98%) hue-rotate(346deg) brightness(95%) contrast(86%);
+  filter: brightness(0) saturate(100%) invert(36%) sepia(60%) saturate(2092%) hue-rotate(190deg) brightness(102%) contrast(101%);
 }
+
 .navbar-text button {
   font-weight: 700;
   color: #fff;
   border: 1px solid #fff;
   padding: 18px 34px;
   font-size: 18px;
-  margin-left: 18px;
+  margin-left: 18px; 
 	position: relative;
 	background-color: transparent;
 	transition: 0.3s ease-in-out;
@@ -170,6 +173,7 @@ span.navbar-text {
   height: 100%;
   position: absolute;
   background-color: #fff;
+  border-radius: 50px;
   left: 0;
   top: 0;
   z-index: -1;
@@ -228,6 +232,21 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 }
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 	border-color: transparent;
+}
+.vvd {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 50px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.vvd:hover {
+  background-color: #ffffff;
+  border-radius: 50px;
 }
 
 /************ Banner Css ************/
@@ -301,34 +320,35 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 
 /************ Partners Css ************/
-.Partners {
+.partner {
   padding: 0 0 50px 0;
+  background: linear-gradient(90.21deg, #010314 -5.91%, #150052 111.58%);
   position: relative;
 }
-.Partners-bx {
-  background: #151515;
+.partner-bx {
+  background: #010314;
   border-radius: 64px;
   text-align: center;
   padding: 60px 50px;
   margin-top: -60px;
 }
-.Partners h2 {
+.partner h2 {
 	font-size: 45px;
 	font-weight: 700;
 }
-.Partners p {
+.partner p {
     color: #B8B8B8;
     font-size: 18px;
     letter-spacing: 0.8px;
     line-height: 1.5em;
     margin: 14px 0 75px 0;
 }
-.Partners-slider {
+.partner-slider {
   width: 80%;
   margin: 0 auto;
   position: relative;
 }
-.Partners-slider .item img {
+.partner-slider .item img {
   width: 50%;
   margin: 0 auto 15px auto;
 }
@@ -363,7 +383,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .service .nav.nav-pills {
   width: 72%;
   margin: 0 auto;
-  border-radius: 50px;
+  border-radius: 0;
   background-color: rgb(255 255 255 / 10%);
   overflow: hidden;
 }
@@ -468,9 +488,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contacts Css ************/
 .contact {
-  background: linear-gradient(90.21deg, #145DA0 -5.91%, #000033 111.58%)
+  background: linear-gradient(90.21deg, #0e4374 -5.91%, #01012e 111.58%)
   ;
   padding: 60px 0 200px 0;
 }
@@ -511,11 +531,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button {
   font-weight: 700;
   color: #000;
-  background-color: #fff;
+  background-color: #FFFFE0; /* Light Yellow */
   padding: 14px 48px;
   font-size: 18px;
   margin-top: 25px;
-  border-radius: 0;
+  border-radius: 50px; /* Pill Shape */
   position: relative;
   transition: 0.3s ease-in-out;
 }
@@ -525,13 +545,15 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .contact form button:hover {
   color: #fff;
+  background-color: #FFFFCC; /* A bit lighter yellow for hover */
 }
 .contact form button::before {
   content: "";
-  background: #121212;
+  background: #047e45;
   width: 0;
   height: 100%;
   position: absolute;
+  border-radius: 50px;
   top: 0;
   left: 0;
   z-index: 0;
@@ -540,6 +562,17 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .contact form button:hover::before {
   width: 100%;
 }
+
+.contact form textarea {
+  margin-top: 10px; 
+}
+.radio-buttons {
+  display: flex;
+  justify-content: flex-start; 
+  gap: 10px;  /* Adjust this value according to your needs */
+}
+
+
 
 /************ Footer Css ************/
 .footer {
@@ -617,7 +650,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .footer p {
   font-weight: 400;
   font-size: 14px;
-  color: #000033;
+  color: #f1f1f5;
   letter-spacing: 0.5px;
   margin-top: 20px;
 }

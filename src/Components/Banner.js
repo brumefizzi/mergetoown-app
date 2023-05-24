@@ -11,9 +11,9 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
-  const toRotate = [ "Co-ownership", "Tenancy in Common", "Trust" ];
-  const period = 2000;
+  const [, setIndex] = useState(1);
+  const toRotate = [ "Co-ownership", "Tenancy in Common", "Counterparty Trust" ];
+  const period = 500;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -57,7 +57,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">About Merge2Own</span>
-                <h1>{``} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Co-ownership", "Tenancy in Common", "Trust" ]'><span className="wrap">{text}</span></span></h1>
+                <h1>{``} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Co-ownership", "Tenancy in Common", "Counterparty Trust" ]'><span className="wrap">{text}</span></span></h1>
                   <p>M2O is an early-stage startup conceived by two University of Waterloo MBET students. The platform is designed to address the limited personal network, counterparty trust, and home affordability concerns of first-time homebuyers and others who encounter significant barriers to home ownership in Canada.
                     We recently won the Greenhouse Inc Social Impact Fund Pitch Competition Award. 
 

@@ -111,48 +111,48 @@ export const Contact = () => {
                         <input
                           type="text"
                           value={formDetails.currentLocation}
-                          placeholder="Current Location (Postal Code and Province)"
+                          placeholder="Location(Province/Postal Code)"
                           onChange={(e) => onFormUpdate('currentLocation', e.target.value)}
                         />
                       </Col>
                       <Col xs={12} className="px-1">
-                        <label>Would you be interested to participate in a co-creation session to discuss your needs sometime in June 2023?</label>
-                        <div>
-                          <label>
-                            <input
-                              type="radio"
-                              id="coCreationYes"
-                              name="coCreationSession"
-                              value="Yes"
-                              checked={formDetails.coCreationSession === 'Yes'}
-                              onChange={(e) => onFormUpdate('coCreationSession', e.target.value)}
-                              required
-                            />
-                            Yes
-                          </label>
-                        </div>
-                        <div>
-                          <label>
-                            <input
-                              type="radio"
-                              id="coCreationNo"
-                              name="coCreationSession"
-                              value="No"
-                              checked={formDetails.coCreationSession === 'No'}
-                              onChange={(e) => onFormUpdate('coCreationSession', e.target.value)}
-                              required
-                            />
-                            No
-                          </label>
-                        </div>
-                      </Col>
-
-
-                      <Col xs={12} className="px-1">
+                          <label>Would you be interested to participate in a co-creation session to discuss your needs sometime in June 2023?</label>
+                          <div className="radio-buttons">
+                            <div>
+                              <label>
+                                <input
+                                  type="radio"
+                                  id="coCreationYes"
+                                  name="coCreationSession"
+                                  value="Yes"
+                                  checked={formDetails.coCreationSession === 'Yes'}
+                                  onChange={(e) => onFormUpdate('coCreationSession', e.target.value)}
+                                  required
+                                />
+                                Yes
+                              </label>
+                            </div>
+                            <div>
+                              <label>
+                                <input
+                                  type="radio"
+                                  id="coCreationNo"
+                                  name="coCreationSession"
+                                  value="No"
+                                  checked={formDetails.coCreationSession === 'No'}
+                                  onChange={(e) => onFormUpdate('coCreationSession', e.target.value)}
+                                  required
+                                />
+                                No
+                              </label>
+                            </div>
+                          </div>
+                        </Col>
+                       <Col xs={12} className="px-1">
                         <textarea
                           rows="6"
                           value={formDetails.message}
-                          placeholder="Message"
+                          placeholder="Send us a Message"
                           onChange={(e) => onFormUpdate('message', e.target.value)}
                         ></textarea>
                         <button type="submit"><span>{buttonText}</span></button>
