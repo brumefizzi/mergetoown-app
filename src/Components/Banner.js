@@ -65,7 +65,8 @@ export const Banner = () => {
 
                     If you are excited as we are in finding creative solutions, please sign up to stay informed when we Go Live.
                   </p>
-                  <button onClick={() => console.log('connect')}>Sign Up <ArrowRightCircle size={25} /></button>
+                  <button onClick={() => console.log('contact')}>Sign Up <ArrowRightCircle size={25} /></button>
+                  
               </div>}
             </TrackVisibility>
           </Col>
