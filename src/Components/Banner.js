@@ -55,9 +55,9 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">About Merge2Own</span>
                 <h3>{``} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Co-ownership", "Tenancy in Common", "Counterparty Trust" ]'><span className="wrap">{text}</span></span></h3>
-                  <p>M2O is an early-stage startup conceived by two University of Waterloo MBET students. The platform is designed to address the limited personal network, counterparty trust, and home affordability concerns of first-time homebuyers and others who encounter significant barriers to home ownership in Canada.
-                    We recently won the Greenhouse Inc Social Impact Fund Pitch Competition Award. 
-
+                  <p>M2O is an early-stage startup that recently won the Greenhouse Inc Social Impact Fund Pitch Competition Award. 
+                    The platform is designed to address the limited personal network, counterparty trust, and home affordability concerns of first-time homebuyers and others who encounter significant barriers to home ownership in Canada.
+                    
                     Are you experiencing challenges in buying your own home or interested in providing services to enable people buy their own home?
 
                     If you are excited as we are in finding creative solutions, please sign up to stay informed when we Go Live.
