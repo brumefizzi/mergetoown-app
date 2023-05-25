@@ -13,7 +13,7 @@ export const Banner = () => {
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [, setIndex] = useState(1);
   const toRotate = [ "Co-ownership", "Tenancy in Common", "Counterparty Trust" ];
-  const period = 500;
+  const period = 200;
 
   useEffect(() => {
     let ticker = setInterval(() => {
@@ -27,13 +27,9 @@ export const Banner = () => {
     let i = loopNum % toRotate.length;
     let fullText = toRotate[i];
     let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
+  
     setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
-
+  
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
       setIndex(prevIndex => prevIndex - 1);
@@ -42,11 +38,12 @@ export const Banner = () => {
       setIsDeleting(false);
       setLoopNum(loopNum + 1);
       setIndex(1);
-      setDelta(500);
+      setDelta(100); // Adjust this value as needed
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
   }
+  
 
   return (
     <section className="banner" id="home">
@@ -57,7 +54,7 @@ export const Banner = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">About Merge2Own</span>
-                <h1>{``} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Co-ownership", "Tenancy in Common", "Counterparty Trust" ]'><span className="wrap">{text}</span></span></h1>
+                <h3>{``} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Co-ownership", "Tenancy in Common", "Counterparty Trust" ]'><span className="wrap">{text}</span></span></h3>
                   <p>M2O is an early-stage startup conceived by two University of Waterloo MBET students. The platform is designed to address the limited personal network, counterparty trust, and home affordability concerns of first-time homebuyers and others who encounter significant barriers to home ownership in Canada.
                     We recently won the Greenhouse Inc Social Impact Fund Pitch Competition Award. 
 
