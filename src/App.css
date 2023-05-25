@@ -654,3 +654,26 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.5px;
   margin-top: 20px;
 }
+/************ Newsletter Css ************/
+/* General Styling for larger screens */
+.new-email-bx {
+  display: flex;
+  justify-content: space-between;
+}
+
+.new-email-bx input {
+  flex: 1;
+  margin-right: 10px;
+}
+
+/* Responsive Styling for smaller screens */
+@media screen and (max-width: 576px) {
+  .new-email-bx {
+    flex-direction: column;
+  }
+
+  .new-email-bx input {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
